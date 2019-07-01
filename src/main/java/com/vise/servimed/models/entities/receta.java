@@ -17,6 +17,7 @@ import javax.validation.constraints.NotEmpty;
 public class receta  {
  
     
+<<<<<<< HEAD
   
     
     private String SINTOMAS_ASUNTO;
@@ -34,6 +35,30 @@ public class receta  {
      @Id
      private String ID_RECETA;
      
+=======
+    @Column(name ="ID_RECETA",nullable=false ,length =10)
+    @Id
+    private String SINTOMAS_ASUNTO;
+    @Column(name ="SINTOMAS_ASUNTO",nullable=false ,length =250)
+    @NotEmpty() 
+    private String HORA;
+    @Column(name ="HORA",nullable=false ,length =50)
+    @NotEmpty() 
+    private String usuario_creado;
+     @Column(name ="usuario_creado",nullable=false ,length =10)
+     @NotEmpty()
+     private String  fecha_creado;
+     @Column(name =" fecha_creado",nullable=true ,length =20)
+     private String usuario_mod;
+     @Column(name ="usuario_mod",nullable=false ,length =10)
+     @NotEmpty() 
+     private String fecha_mod;
+     @Column(name ="fecha_mod",nullable=false ,length =20)
+     @NotEmpty() 
+     
+     private String ID_RECETA;
+     @NotEmpty() 
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
 
     public String getSINTOMAS_ASUNTO() {
         return SINTOMAS_ASUNTO;
@@ -79,10 +104,13 @@ public class receta  {
     public void setEID_RECETA(String ID_RECETA) {
         this.ID_RECETA = ID_RECETA;
     }
+<<<<<<< HEAD
 
 	public void setCODBARFECLIENT(String id_receta2) {
 		// TODO Auto-generated method stub
 		
 	}
+=======
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
     
 }

@@ -5,6 +5,11 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+<<<<<<< HEAD
+=======
+import javax.persistence.Id;
+
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
@@ -17,6 +22,7 @@ public class usuarios {
 	
   
     private String nombre;
+<<<<<<< HEAD
     private String password ;
     private String email;
     private String role;
@@ -29,6 +35,32 @@ public class usuarios {
      
 	 private String fecha_mod ;
     
+=======
+    @Column(name ="nombre",nullable=false ,length =50)
+    @NotEmpty() 
+    private String password ;
+     @Column(name ="password ",nullable=false ,length =150)
+     @NotEmpty() 
+    private String email;
+     @Column(name ="email",nullable=true ,length =150)
+    private String role;
+     @Column(name ="role",nullable=true ,length =2)
+     private String usuario_creador ;
+     @Column(name ="usuario_creador",nullable=false ,length =10)
+     @NotEmpty() 
+     private String id_citamedicamento;
+     @Column(name ="id_citamedicamento",nullable=false ,length =5)
+     @NotEmpty() 
+     private String fecha_creado;
+     @Column(name ="fecha_creado",nullable=false ,length =50)
+     @NotEmpty() 
+	 private String usuario_mod ;
+     @Column(name ="usuario_mod ",nullable=false ,length =10)
+     @NotEmpty() 
+	 private String fecha_mod ;
+     @Column(name ="fecha_mod",nullable=false ,length =50)
+     @NotEmpty()
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
    
 
     public String getNombre() {

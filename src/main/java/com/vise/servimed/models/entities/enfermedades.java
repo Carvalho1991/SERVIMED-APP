@@ -16,6 +16,7 @@ import javax.validation.constraints.NotEmpty;
 public class enfermedades  {
  
     
+<<<<<<< HEAD
     
     @Id
     private String NOMBRE_ENFERMEDAD ;
@@ -33,6 +34,30 @@ public class enfermedades  {
     
      private String ID_ENFERMEDAD;
     
+=======
+    @Column(name ="ID_ENFERMEDAD",nullable=false ,length =11)
+    @Id
+    private String NOMBRE_ENFERMEDAD ;
+    @Column(name ="NOMBRE_ENFERMEDAD ",nullable=false ,length =50)
+    @NotEmpty() 
+    private String SINTOMA;
+    @Column(name ="SINTOMA ",nullable=false ,length =150)
+    @NotEmpty() 
+    private String usuario_creador;
+     @Column(name ="usuario_creador",nullable=false ,length =10)
+     @NotEmpty() 
+       private String fecha_creado;
+     @Column(name ="fecha_creado",nullable=true ,length =10)
+     private String usuario_mod ;
+     @Column(name ="usuario_mod ",nullable=false ,length =250)
+     @NotEmpty() 
+     private String fecha_mod;
+     @Column(name ="fecha_mod",nullable=false ,length =20)
+     @NotEmpty() 
+    
+     private String ID_ENFERMEDAD;
+     @NotEmpty() 
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
 
 	 
 	 

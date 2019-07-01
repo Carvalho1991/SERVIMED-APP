@@ -16,6 +16,7 @@ import javax.validation.constraints.NotEmpty;
 public class especialidades  {
  
     
+<<<<<<< HEAD
     
     @Id
         private String NOMBRE_Especialidad;
@@ -84,6 +85,29 @@ public class especialidades  {
      
 	 private String fecha_mod;
      
+=======
+    @Column(name ="ID_Especialidad ",nullable=false ,length =10)
+    @Id
+        private String NOMBRE_Especialidad;
+    @Column(name ="NOMBRE_Especialidad",nullable=false ,length =50)
+    @NotEmpty() 
+    private String numero_especialidades;
+     @Column(name ="numero_especialidades",nullable=false ,length =150)
+     @NotEmpty() 
+    private String usuario_creador;
+     @Column(name ="usuario_creador",nullable=true ,length =10)
+    private String celular;
+     @Column(name ="celular",nullable=true ,length =20)
+     private String direccion;
+     @Column(name ="direccion",nullable=false ,length =250)
+     @NotEmpty() 
+     private String usuario_mod;
+     @Column(name ="usuario_mod ",nullable=false ,length =10)
+     @NotEmpty() 
+	 private String fecha_mod;
+     @Column(name ="fecha_mod",nullable=false ,length =10)
+     @NotEmpty() 
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
     
 
     public String getNOMBRE_Especialidad() {

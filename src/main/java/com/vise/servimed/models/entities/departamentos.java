@@ -18,6 +18,7 @@ public class departamentos  {
        
     @Id
     private String id_number;
+<<<<<<< HEAD
     
     private String nombre;
    
@@ -29,6 +30,23 @@ public class departamentos  {
      
      private String fecha_mod;
     
+=======
+    @Column(name ="ID_NUMBER",nullable=false ,length =3)
+    @NotEmpty() 
+    private String nombre;
+    @Column(name ="NOMBRE",nullable=false ,length =25)
+    @NotEmpty() 
+    private String usuario_creador;
+     @Column(name ="USUARIO_CREADOR",nullable=false ,length =10)
+     @NotEmpty() 
+    private String fecha_creado;
+     @Column(name ="FECHA_CREADO",nullable=true ,length =20)
+    private String usuario_mod;
+     @Column(name ="usuario_mod",nullable=true ,length =20)
+     private String fecha_mod;
+     @Column(name ="fecha_mod",nullable=false ,length =250)
+     @NotEmpty()
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
 
     public String getid_number() {
         return id_number;

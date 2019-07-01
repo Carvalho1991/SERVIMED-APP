@@ -19,6 +19,7 @@ public class zonas_dep  {
     
     @Id
     private String number_id;
+<<<<<<< HEAD
      
     private String nombre_zona;
      
@@ -30,6 +31,23 @@ public class zonas_dep  {
      
      private String fecha_mod;
      
+=======
+    @Column(name ="NUMBER_ID",nullable=false ,length =3)
+    @NotEmpty() 
+    private String nombre_zona;
+    @Column(name ="NOMBRE_ZONA",nullable=false ,length =25)
+    @NotEmpty() 
+    private String usuario_creador;
+     @Column(name ="USUARIO_CREADOR",nullable=false ,length =10)
+     @NotEmpty() 
+    private String fecha_creado;
+     @Column(name ="FECHA_CREADO",nullable=true ,length =20)
+    private String usuario_mod;
+     @Column(name ="usuario_mod",nullable=true ,length =20)
+     private String fecha_mod;
+     @Column(name ="fecha_mod",nullable=false ,length =250)
+     @NotEmpty()
+>>>>>>> 23520d67378ce1d438d5f63bf2782ea1cb55b11b
 
     public String getnumber_id() {
         return number_id;
